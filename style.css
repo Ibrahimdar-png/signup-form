@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Self-hosted fonts */
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("assets/Fonts/Norse-Bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto';
+}
+
+.signupForm {
+    background-color: #f9fafb;
+    width: 70%; 
+}
+
+.signupForm__introText {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+
+.signupForm__fields {
+    background-color: white;
+    box-shadow: 0px 3px 10px rgb(144, 144, 144);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.7rem;
+    display: grid;
+    grid-template-columns: 19rem 19rem;
+    grid-template-rows: 4rem 4.3rem 4.3rem 4.3rem;
+}
+
+.signupForm__fields__text1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    grid-column-start: 1; grid-column-end: 3;
+}
+
+.signupForm__fields__field p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.signupForm__fields__field input {
+    font-size: 1rem;
+    padding-inline: 0.3rem;
+    padding-block: 0.2rem;
+    border: 2px solid #e8e9ed;
+    border-radius: 0.3rem;
+    background-color: #fffefe;
+}
+
+.signupForm__fields__field input:focus-visible {
+    outline: 2px solid rgb(0, 195, 255);
+}
+
+.signupForm__createAccBtn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
+    border: 0px;
+    border-radius: 0.3rem;
+    background-color: #596d48;
+    color: white;
+    box-shadow: 3px 3px 10px rgb(144, 144, 144);
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+}
+
+.signupForm__loginLink {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.signupForm__loginLink a{
+    color: #596d48;
+    text-decoration: none;
+    
+}
+
+.logoCanvas {
+    width: 30%;
+    height: 100vh;
+}
+
+.logoCanvas__backgroundImg {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.logoCanvas__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0.0, 0.0, 0.0, 0.5);
+    color: white;
+    width: 100%;
+    transform: translateY(-45rem);
+    padding-block: 10px;
+}
+
+.logoCanvas__logo__img {
+    width: 6.2rem;
+    height: 9rem;
+}
+
+.logoCanvas__logo__txt {
+    font-family: "Norse-Bold";
+    font-size: 6rem;
+}
